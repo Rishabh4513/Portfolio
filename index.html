@@ -258,7 +258,7 @@
          <!--2. -->
 
 
-         <div class="col-4 d-flex">
+         <div class="col-4 d-flex" style="margin-top:55px">
           <a href="./algorithms/Splitwise/index.html">
            <div class="cards__item flip-card">
               <div class="flip-card__part flip-card__part--front"><img class="flip-card__image" src="./images/skills/heap.jpg" alt="Ransomware Reconciler"></div>
@@ -272,22 +272,21 @@
 
           <!--3. -->
 
-
           <div class="col-4 d-flex" style="margin-top:110px">
-            <a href="./algorithms/Suduko Solver/index.html">
-            <div class="cards__item flip-card">
-               <div class="flip-card__part flip-card__part--front"><img class="flip-card__image" src="./images/skills/backtracking.jpg" alt="Ransomware Reconciler"></div>
-               <div class="flip-card__part flip-card__part--back">
-                   <p class="cards__title" style="font-size:40px;color:#343a40;">Backtracking</p>
-                   <p class="cards__txt"  style="color:#343a40"><br/>Backtracking is needed to find all possible combination to solve an optimization problem until we find one that "works".</p>
+            <a href="./algorithms/Photo Editor/index.html">
+             <div class="cards__item flip-card">
+                <div class="flip-card__part flip-card__part--front"><img class="flip-card__image" src="./images/skills/3d array.jpg" alt="Ransomware Reconciler"></div>
+                <div class="flip-card__part flip-card__part--back">
+                    <p class="cards__title" style="font-size:40px;color:#343a40;">3-D Array</p>
+                    <p class="cards__txt" style="color:#343a40"><br/>A 3D array is a multi-dimensional array(array of arrays) which is a collection of 2D arrays. It is specified by using three subscripts:row size, cell size and column size. </p>  
+                </div>
+                </a>
               </div>
-            </a>
-             </div>
-           </div>
+            </div>
 
            <!--4. -->
 
-           <div class="col-4 d-flex" style="margin-top:55px">
+           <div class="col-4 d-flex">
             <a href="./algorithms/Travel path/index.html">
              <div class="cards__item flip-card">
                 <div class="flip-card__part flip-card__part--front"><img class="flip-card__image" src="./images/skills/dijikstra.jpg" alt="Ransomware Reconciler"></div>
@@ -320,16 +319,16 @@
 
 
              <div class="col-4 d-flex" style="margin-top:110px">
-              <a href="./algorithms/Photo Editor/index.html">
-               <div class="cards__item flip-card">
-                  <div class="flip-card__part flip-card__part--front"><img class="flip-card__image" src="./images/skills/3d array.jpg" alt="Ransomware Reconciler"></div>
-                  <div class="flip-card__part flip-card__part--back">
-                      <p class="cards__title" style="font-size:40px;color:#343a40;">3-D Array</p>
-                      <p class="cards__txt" style="color:#343a40"><br/>A 3D array is a multi-dimensional array(array of arrays) which is a collection of 2D arrays. It is specified by using three subscripts:row size, cell size and column size. </p>  
-                  </div>
-                  </a>
+              <a href="./algorithms/Suduko Solver/index.html">
+              <div class="cards__item flip-card">
+                 <div class="flip-card__part flip-card__part--front"><img class="flip-card__image" src="./images/skills/backtracking.jpg" alt="Ransomware Reconciler"></div>
+                 <div class="flip-card__part flip-card__part--back">
+                     <p class="cards__title" style="font-size:40px;color:#343a40;">Backtracking</p>
+                     <p class="cards__txt"  style="color:#343a40"><br/>Backtracking is needed to find all possible combination to solve an optimization problem until we find one that "works".</p>
                 </div>
-              </div>
+              </a>
+               </div>
+             </div>
     	</div>
     </section>
 
@@ -395,7 +394,7 @@
 
         <div class="row no-gutters block-9">
           <div class="col-md-6 order-md-last d-flex">
-            <form method="POST" action="/index.html" class="bg-light p-4 p-md-5 contact-form">
+            <form method="POST" action="https://formspree.io/f/xpzokdqy" id="my-form" class="bg-light p-4 p-md-5 contact-form">
               <div class="form-group">
                 <input type="text" class="form-control" name="name" placeholder="Your Name" required>
               </div>
@@ -407,20 +406,21 @@
               </div>
 
               <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5" onclick ="myFunction()">
-                <input type="hidden" name="_next" value="index.html">
+                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                <!-- <input type="hidden" name="_next" value="index.html"> -->
               </div>
             </form>
-
+            
           </div>
+          
 
           <div class="col-md-6 d-flex">
           	<div class="img" style="background-image: url(./images/skills/c11.jpeg);"></div>
           </div>
         </div>
       </div>
+      <div id="status"></div>
     </section>
-
 
     <footer class="ftco-footer ftco-section">
       <div class="container">
@@ -462,7 +462,7 @@
             	<h2 class="ftco-heading-2">Have a Question?</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><a ><span class="icon icon-phone"></span><span class="text">+91 9621069694</span></a></li>
+	                <!-- <li><a ><span class="icon icon-phone"></span><span class="text">+91 9621069694</span></a></li> -->
 	                <li><a href="mailto:rishabhguptaofficial2018@gmail.com"><span class="icon icon-envelope"></span><span class="text">rishabhguptaofficial2018@gmail.com</span></a></li>
 	              </ul>
 	            </div>
@@ -500,10 +500,16 @@
   <script src="./js/particles.min.js"></script>
   <script src="./js/app.js"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/form.js"></script>
 
 
 
   </body>
-
+  <!-- <script>
+    function myFunction() {
+		  document.getElementById("myForm").submit();
+		  document.getElementById("myForm").reset(); 
+		}
+  </script> -->
 
 </html>
