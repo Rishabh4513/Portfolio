@@ -6,7 +6,6 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: space-evenly ; 
-    margin: 0 auto;
 }
 
 #generate-sudoku{

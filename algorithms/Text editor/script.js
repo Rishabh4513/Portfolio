@@ -24,9 +24,8 @@ onload = function () {
 
     clear.onclick = function () {
         stack.clear();
-        text = "";
         textbox.value = "";
-        temptext.innerHTML = "Sequence of operations will be shown here !";
+        temptext.innerHTML = "Sequence of operations will be shown here !  <br> 0 represents insertion in stack. <br> 1 represents deletion in stack.";
     };
 
     textbox.oninput = function(event){
@@ -40,14 +39,14 @@ onload = function () {
                 break;
         }
 
-        temptext.innerHTML = "On stack "+stack.top()+"<br>"+temptext.innerHTML;
-        text = textbox.value;
+        temptext.innerHTML = "On stack "+stack.top();
+        text=textbox.value;
     };
 
     undo.onclick = function () {
         let operation = stack.pop();
         if(operation[0]!==-1){
-            temptext.innerHTML = "Performing undo operation<br>"+temptext.innerHTML;
+            temptext.innerHTML = "Performing undo operation";
             if(operation[0] === 0){
                 let len = operation[1].length;
                 textbox.value = textbox.value.substring(0,textbox.value.length-len);
