@@ -1,6 +1,6 @@
 var arr = [[], [], [], [], [], [], [], [], []]
 var temp = [[], [], [], [], [], [], [], [], []]
-
+var f=false;
 for (var i = 0; i < 9; i++) {
     for (var j = 0; j < 9; j++) {
         arr[i][j] = document.getElementById(i * 9 + j);
@@ -79,6 +79,7 @@ function changeBoard(board) {
 
 
 button.onclick = function () {
+    f=true;
     var xhrRequest = new XMLHttpRequest()
     xhrRequest.onload = function () {
         var response = JSON.parse(xhrRequest.response)
@@ -172,5 +173,8 @@ function solveSudoku(board) {
 
 
 solve.onclick = function () {
+    if(f==true)
     solveSudoku(board)
+    else
+    alert("Oops!! Click on Get New Puzzle to generate the Problem !!");
 }
